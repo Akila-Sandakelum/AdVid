@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+    android:paddingBottom="3dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:paddingLeft="6dp" >
+
+            <TextView
+                android:id="@+id/hist_vidTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/hist_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#fff"
+            android:gravity="center"
+           
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/commnt_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+       android:padding="10dp"
+                android:background="#ff4444"
+                android:src="@drawable/comments" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="4dp"
+                android:layout_height="40dp"
+android:padding="2dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/replay_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    android:padding="10dp"
+                android:background="#ff4444"
+                android:src="@drawable/replay" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

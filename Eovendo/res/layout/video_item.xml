@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   
+   >
+
+   <!--  <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <RelativeLayout
+                android:id="@+id/box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"                
+                android:alpha="1"
+                android:background="@drawable/custom_et"
+                android:padding="8dp" 
+               	>
+
+                <TextView
+                    android:id="@+id/header1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uploaded By : " 
+                    android:textColor="#000"
+                   />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/header1"
+                    android:layout_alignBottom="@+id/header1"
+                    android:layout_toRightOf="@+id/header1"
+                    android:textColor="#000"
+                    android:text="Samsung" 
+                    />
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/header1"
+                    android:layout_below="@+id/header1"
+                    android:textColor="#000"
+                    android:src="@drawable/thumbnail"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/thumbnail"
+                    android:layout_below="@+id/thumbnail"
+                    android:text="Soccer in its high"
+                    android:textColor="#000"
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/name"
+                    android:layout_below="@+id/name"
+                    android:text="Small Text"
+                    android:textColor="#000"
+                    android:paddingLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" 
+                    />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/description"
+                    android:layout_alignBottom="@+id/description"
+                    android:layout_alignRight="@+id/thumbnail"
+                    android:text="64 Views" 
+                    android:padding="4dp"
+                    android:textColor="#fff"
+                    android:background="#ff4444"/>
+
+                <View
+                    android:id="@+id/view1"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/name"
+                    android:layout_below="@+id/thumbnail"
+                    android:background="#ff4444" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+   <!--  </ScrollView> -->
+
+</RelativeLayout>

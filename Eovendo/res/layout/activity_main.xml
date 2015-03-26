@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff4455"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="400px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_c" />
+
+    <TextView
+        android:id="@+id/appTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="ADS THAT PAY YOUR ATTENTION"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:textSize="22sp" />
+
+    <EditText
+        
+        android:id="@+id/usernameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:hint="Username"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:hint="Password"
+        android:id="@+id/passwordET"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#fff"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/signIn"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/signin_custom"
+        android:text="Login" />
+
+</LinearLayout>

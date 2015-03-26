@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/rateHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:alpha="0.8"
+        android:textColor="#fff"
+        android:background="#ff4444"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Give us your opinion"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rateHeader"
+        android:layout_marginTop="0dp"
+        android:background="#fff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="354dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#fff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <RatingBar
+                android:id="@+id/video_ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/video_ratingBar"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/video_ratingBar"
+                android:text="out of 5" />
+
+            <ImageView
+                android:id="@+id/cmnt_Imageview1"
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:layout_below="@+id/video_ratingBar"
+                android:alpha="0.8"
+                android:background="#fff"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center" />
+
+            <CheckBox
+                android:id="@+id/unclr_msgCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cmnt_Imageview1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Unclear message" />
+
+            <CheckBox
+                android:id="@+id/irrelavntCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/unclr_msgCB"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Irrelavent" />
+
+            <CheckBox
+                android:id="@+id/untrustCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/irrelavntCB"
+                android:layout_marginTop="10dp"
+                android:text="Untrustworthy" />
+
+            <CheckBox
+                android:id="@+id/commonCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/unclr_msgCB"
+                android:layout_below="@+id/boreCB"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Stand not from
+other commercials" />
+
+            <CheckBox
+                android:id="@+id/relavntCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/irrelavntCB"
+                android:layout_alignLeft="@+id/clr_msgCB"
+                android:text="Relavant" />
+
+            <CheckBox
+                android:id="@+id/credbleCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/untrustCB"
+                android:layout_alignBottom="@+id/untrustCB"
+                android:layout_alignLeft="@+id/relavntCB"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Credible" />
+
+            <CheckBox
+                android:id="@+id/uniqueCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/commonCB"
+                android:layout_alignBottom="@+id/commonCB"
+                android:layout_alignLeft="@+id/entertnCB"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Stand out from other commercials" />
+
+         
+               <EditText
+                android:id="@+id/commentBox"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/clr_msgCB"
+                android:layout_below="@+id/commonCB"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/fillcolor"
+                android:ems="5"
+                android:gravity="top"
+                android:hint="Your comment here..."
+                android:inputType="textMultiLine"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/submitCmnt"
+                style="@style/btnStyleopal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentBox"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:text="Submit" />
+
+            <CheckBox
+                android:id="@+id/clr_msgCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/irrelavntCB"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/unclr_msgCB"
+                android:text="Clear message" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/commonCB"
+                android:background="@drawable/view_shape" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/boreCB"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/view_shape" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/credbleCB"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_shape" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_above="@+id/untrustCB"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/view_shape" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_above="@+id/irrelavntCB"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_shape" />
+
+            <CheckBox
+                android:id="@+id/boreCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view3"
+                android:layout_marginBottom="10dp"
+                android:text="Boring" />
+
+            <CheckBox
+                android:id="@+id/entertnCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/credbleCB"
+                android:layout_below="@+id/view3"
+                android:layout_marginBottom="10dp"
+                android:text="Entertaining" />
+
+            <TextView
+                android:id="@+id/commntTV"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+            	
+                android:layout_below="@+id/submitCmnt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fillcolor"
+                android:text="TextView" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

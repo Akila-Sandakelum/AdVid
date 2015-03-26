@@ -1,0 +1,64 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+     <style name="btnStyleopal" parent="@android:style/Widget.Button">
+       <item name="android:textSize">20sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#FFFFFF</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item>
+       <item name="android:shadowRadius">0.1</item>
+       <item name="android:background">@drawable/signin_custom</item>
+       <item name="android:padding">2dp</item>
+   </style>
+
+   <style name="btnSubscribe" parent="@android:style/Widget.Button">
+       <item name="android:textSize">20sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#FFFFFF</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item>
+       <item name="android:shadowRadius">1</item>
+       <item name="android:background">@drawable/signup_custom</item>
+       <item name="android:typeface">normal</item>
+       <item name="android:padding">2dp</item>
+   </style>
+ 
+    <style name="Title" parent="@android:style/Widget.TextView">
+       <item name="android:textSize">30sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#aa231d</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">0</item>
+       <item name="android:shadowDy">0</item>
+       <item name="android:shadowRadius">2</item>
+       <item name="android:padding">2dp</item>
+   </style>
+   <style name="Password" parent="@android:style/Widget.EditText">
+       
+       <item name="android:typeface">normal</item>
+       
+   </style>
+    
+</resources>
